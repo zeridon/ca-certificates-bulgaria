@@ -1,0 +1,5 @@
+.debhelper/
+ca-certificates-bulgaria.substvars
+ca-certificates-bulgaria/
+debhelper-build-stamp
+files
