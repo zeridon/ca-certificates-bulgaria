@@ -1,0 +1,22 @@
+Source: ca-certificates-bulgaria
+Section: metapackages
+Priority: optional
+Maintainer: Vladimir Vitkov <vvitkov@gmail.com>
+Build-Depends: debhelper (>= 12.0.0)
+Standards-Version: 4.5.0
+
+Package: ca-certificates-bulgaria
+Architecture: all
+Depends: ca-certificates (>= 20210119),
+	 ca-borica (>= 20210310),
+	 ca-evrotrust-technologies (>= 20210310),
+	 ca-infonotary (>= 20210310),
+	 ca-sep-bulgaria (>= 20210310),
+         ca-stampit (>= 20210310),
+         ${misc:Depends}
+Description: CA Certificates for Bulgarian trusted service providers
+ This package depends on all of the packages providing (sub-)root CA
+ certificates for Bulgarian trusted service providers.
+ .
+ More details at: https://crc.bg/en/rubrics/561/trust-services
+
