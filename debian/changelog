@@ -1,5 +1,5 @@
-ca-certificates-bulgaria (20210310) UNRELEASED; urgency=medium
+ca-certificates-bulgaria (20210714) unstable; urgency=medium
 
   * Initial release.
 
- -- Vladimir Vitkov <vvitkov@gmail.com>  Wed, 10 Mar 2021 13:11:23 +0200
+ -- Vladimir Vitkov <vvitkov@gmail.com>  Wed, 14 Jul 2021 17:55:03 +0300

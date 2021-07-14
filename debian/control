@@ -8,11 +8,11 @@ Standards-Version: 4.5.0
 Package: ca-certificates-bulgaria
 Architecture: all
 Depends: ca-certificates (>= 20210119),
-	 ca-borica (>= 20210310),
-	 ca-evrotrust-technologies (>= 20210310),
-	 ca-infonotary (>= 20210310),
-	 ca-sep-bulgaria (>= 20210310),
-         ca-stampit (>= 20210310),
+	 ca-certificates-b-trust (>= 20210714),
+	 ca-certificates-evrotrust (>= 20210714),
+	 ca-certificates-infonotary (>= 20210714),
+	 ca-certificates-sep (>= 20210714),
+         ca-certificates-stampit (>= 20210714),
          ${misc:Depends}
 Description: CA Certificates for Bulgarian trusted service providers
  This package depends on all of the packages providing (sub-)root CA
