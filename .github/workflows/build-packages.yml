@@ -5,6 +5,8 @@ on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
     branches: [ master ]
+    tags:
+      - "*"
   pull_request:
     branches: [ master ]
 
@@ -23,11 +25,43 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
       
+      # download the other assets
+      - uses: robinraju/release-downloader@v1.9
+        with:
+          repository: "zeridon/ca-certificates-b-trust"
+          latest: true
+          fileName: "*.deb"
+
+      - uses: robinraju/release-downloader@v1.9
+        with:
+          repository: zeridon/ca-certificates-evrotrust
+          latest: true
+          fileName: "*.deb"
+
+      - uses: robinraju/release-downloader@v1.9
+        with:
+          repository: zeridon/ca-certificates-infonotary
+          latest: true
+          fileName: "*.deb"
+
+      - uses: robinraju/release-downloader@v1.9
+        with:
+          repository: zeridon/ca-certificates-sep
+          latest: true
+          fileName: "*.deb"
+
+      - uses: robinraju/release-downloader@v1.9
+        with:
+          repository: zeridon/ca-certificates-stampit
+          latest: true
+          fileName: "*.deb"
+
       # package for debian
       - uses: dawidd6/action-debian-package@v1.6.0
 
-      # upload generated deb    
-      - uses: actions/upload-artifact@v4
+      # create release on tag
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
         with:
-          name: ca-certificates-bulgaria.deb
-          path: ${{ github.workspace }}/**/*.deb
+          files: ${{ github.workspace }}/**/*.deb

@@ -1,3 +1,10 @@
+ca-certificates-bulgaria (20240222) unstable; urgency=medium
+
+  * Update build tooling
+  * Refresh dependencies
+
+ -- Vladimir Vitkov <vvitkov@gmail.com>  Thu, 22 Feb 2024 14:27:33 +0200
+
 ca-certificates-bulgaria (20210714) unstable; urgency=medium
 
   * Initial release.
