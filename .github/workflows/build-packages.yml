@@ -26,31 +26,31 @@ jobs:
       - uses: actions/checkout@v4
       
       # download the other assets
-      - uses: robinraju/release-downloader@v1.9
+      - uses: robinraju/release-downloader@v1.11
         with:
           repository: "zeridon/ca-certificates-b-trust"
           latest: true
           fileName: "*.deb"
 
-      - uses: robinraju/release-downloader@v1.9
+      - uses: robinraju/release-downloader@v1.11
         with:
           repository: zeridon/ca-certificates-evrotrust
           latest: true
           fileName: "*.deb"
 
-      - uses: robinraju/release-downloader@v1.9
+      - uses: robinraju/release-downloader@v1.11
         with:
           repository: zeridon/ca-certificates-infonotary
           latest: true
           fileName: "*.deb"
 
-      - uses: robinraju/release-downloader@v1.9
+      - uses: robinraju/release-downloader@v1.11
         with:
           repository: zeridon/ca-certificates-sep
           latest: true
           fileName: "*.deb"
 
-      - uses: robinraju/release-downloader@v1.9
+      - uses: robinraju/release-downloader@v1.11
         with:
           repository: zeridon/ca-certificates-stampit
           latest: true
