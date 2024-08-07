@@ -11,7 +11,7 @@ Depends: ca-certificates (>= 20210119),
 	 ca-certificates-b-trust (>= 20240807),
 	 ca-certificates-evrotrust (>= 20240807),
 	 ca-certificates-infonotary (>= 20240807),
-         ca-certificates-stampit (>= 220240806),
+         ca-certificates-stampit (>= 20240806),
          ${misc:Depends}
 Description: CA Certificates for Bulgarian trusted service providers
  This package depends on all of the packages providing (sub-)root CA

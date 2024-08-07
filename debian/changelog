@@ -1,3 +1,9 @@
+ca-certificates-bulgaria (20240807.2) unstable; urgency=medium
+
+  * Typo fixes in dependencies
+
+ -- Vladimir Vitkov <vvitkov@gmail.com>  Wed, 07 Aug 2024 12:27:31 +0300
+
 ca-certificates-bulgaria (20240807.1) unstable; urgency=high
 
   * Remove SEP bulgaria from deps as it is no longer operational
