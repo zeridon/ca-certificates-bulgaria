@@ -56,6 +56,9 @@ jobs:
           latest: true
           fileName: "*.deb"
 
+      - name: Install Downloaded debs
+        run: sudo dpkg -i *.deb
+
       # package for debian
       - uses: dawidd6/action-debian-package@v1.6.0
 
