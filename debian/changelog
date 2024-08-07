@@ -1,4 +1,4 @@
-ca-certificates-bulgaria (20240807-1) unstable; urgency=high
+ca-certificates-bulgaria (20240807.1) unstable; urgency=high
 
   * Remove SEP bulgaria from deps as it is no longer operational
 
