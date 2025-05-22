@@ -9,7 +9,8 @@ Package: ca-certificates-bulgaria
 Architecture: all
 Depends: ca-certificates (>= 20210119),
 	 ca-certificates-b-trust (>= 20240807),
-	 ca-certificates-evrotrust (>= 20240807),
+	 ca-certificates-edocs (>= 20250522),
+	 ca-certificates-evrotrust (>= 20250522),
 	 ca-certificates-infonotary (>= 20240807),
          ca-certificates-stampit (>= 20240806),
          ${misc:Depends}

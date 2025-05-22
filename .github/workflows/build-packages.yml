@@ -40,6 +40,12 @@ jobs:
 
       - uses: robinraju/release-downloader@v1.11
         with:
+          repository: zeridon/ca-certificates-evrotrust
+          latest: true
+          fileName: "*.deb"
+
+      - uses: robinraju/release-downloader@v1.11
+        with:
           repository: zeridon/ca-certificates-infonotary
           latest: true
           fileName: "*.deb"
@@ -60,7 +66,7 @@ jobs:
         run: sudo dpkg -i *.deb
 
       # package for debian
-      - uses: jtdor/build-deb-action@v1
+      - uses: dawidd6/action-debian-package@v1.6.0
 
       # create release on tag
       - name: Release
