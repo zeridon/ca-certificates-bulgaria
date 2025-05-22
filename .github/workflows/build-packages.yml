@@ -34,7 +34,7 @@ jobs:
 
       - uses: robinraju/release-downloader@v1.11
         with:
-          repository: zeridon/ca-certificates-evrotrust
+          repository: zeridon/ca-certificates-edocs
           latest: true
           fileName: "*.deb"
 
